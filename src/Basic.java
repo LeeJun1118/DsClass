@@ -21,5 +21,23 @@ public class Basic {
         System.out.println(Arrays.toString(n));
         System.out.println(n[n.length-1]);
 
+        //3-1.정렬하지 않고 가장 거리가 짦은 두 곳 찾기
+        System.out.println("3.");
+
+        //Math.abs를 하면 절댓값이 나옴
+        //중복 없이 하려면 n*(n-1)/2
+        long v[] = {34,76,11,3,7,13,9};
+        int small;
+        for (int i = 0; i < n.length - 1; i++)
+            for (int j = i+1; j < n.length; j++)
+            {
+                  small =  Math.abs(n[i]-n[j]);
+                  //if ()
+            }
+
+        //3-2정렬 후 가장 거리가 짧은 두 곳 찾기
+
+
+        //4.
     }
 }
