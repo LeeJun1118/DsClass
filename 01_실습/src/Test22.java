@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Test22 {
     public static void main(String[] args) {
         //n[n.lenght-2]번째를 나오게 하는데 O(n)의 시간이 걸리도록 코드를 작성
@@ -7,5 +9,17 @@ public class Test22 {
         // 최대값을 찾아놧으면 그걸 무시하고 최대값이 아닌 것들 중에서 최대값을 찾으면 그게 두번째 큰값이 된다.
         // 총 O(2n)의 시간이 걸리게 된다.
 
+        int n[] = {4, 5, 1, 5, 1, 3, 4, 5, 1};
+        int index = n.length-1;
+        Arrays.sort(n);
+        int max = n[n.length-1];
+        int max2 = 0;
+        for (int i = n.length - 1; i >= 0; i--)
+        {
+            if (n[i] == max)
+                index--;
+        }
+        max2 = n[index];
+        System.out.println(max2);
     }
 }
