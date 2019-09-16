@@ -6,5 +6,6 @@ public class Test23 {
         Arrays.sort(n);
         int max = n[n.length-2];
         System.out.println(max);
+
     }
 }
