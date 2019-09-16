@@ -20,7 +20,7 @@ public class class2 {
         char language = 'K';
         System.out.println(title + "," + publicationYear + "," + weight + "," + supplementYN + "," + language);
 
-        //1-1
+        //2
         System.out.println("2번");
         String title1 = "자료구조";
         int year = 2017;
@@ -59,8 +59,6 @@ public class class2 {
         System.out.println("6번");
         int n2 = 987654321;
         int k = 4;
-        int tmp = 0;
-
         for (int i = 0; i < k - 1; i++) {
             n2 = n2 / 10;
         }
