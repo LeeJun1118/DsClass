@@ -40,6 +40,7 @@ public class Test10 {
 
             if ((n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) >= 0) {
                 //배열에 안넣고 String에 s3에 하나씩 넣는게 더 쉬울듯하다.
+                //Test3파일 참조해서 해보자
 
                 //sum[sum.length - 1 - i] = sum[sum.length - 1 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
                 //sum[sum.length - 2 - i] = sum[sum.length - 2 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) / 10;
