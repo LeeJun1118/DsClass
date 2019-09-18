@@ -14,6 +14,10 @@ public class Test10 {
         char c1 = 0;
         char c2 = 0;
 
+        //배열에 안넣고 String에 s3에 하나씩 넣는게 더 쉬울듯하다.
+
+
+
         //크기가 정확하게 안나옴 바이트 단위로 나오는 건가
         //s1과 s2는 4자리 차이가 나지만 s1.length()-s2.length() = 1 이 나옴
         //charAt으로 잘라서 배열에 넣는 것부터 먼저 해야함
@@ -31,17 +35,25 @@ public class Test10 {
             v2 = c2 - '0';
             n2[n2.length - 1 - i] = v2;
         }
-
         for (int i = 0; i < n1.length - 1; i++) {
-            if ((n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) > 0) {
-                sum[sum.length - 1 - i] = sum[sum.length - 1 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
-                sum[sum.length - 2 - i] = sum[sum.length - 2 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) / 10;
+
+
+            if ((n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) >= 0) {
+                //배열에 안넣고 String에 s3에 하나씩 넣는게 더 쉬울듯하다.
+
+                //sum[sum.length - 1 - i] = sum[sum.length - 1 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
+                //sum[sum.length - 2 - i] = sum[sum.length - 2 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) / 10;
             }
         }
         for (int i = 0; i < sum.length; i++) {
             s3 = "" + s3 + sum[i];
         }
         System.out.println(s3);
-
-    }
+        //내코드
+        // 999999999910888888888888888888888888888888888877666666666666666665
+        //BigInteger
+        // 100000000000888888888888888888888888888888888877666666666666666665
+        // 계속 더하다가 s2의 8이 끝나고 더이상 더해질게 없는 s1은 9만 계속 나오는데 뒤의 연산의 결과로
+        // 9에 1이 계속 더해져 0000~ 이 나오다가 끝에 1이 출력된다.
+   }
 }
