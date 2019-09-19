@@ -5,51 +5,47 @@ public class Test10 {
 
         String s1 = "99999999999999999999999999999999999999999999988888888888888888888";
         String s2 = "888888888888888888888888888888888888777777777777777777";
-        String s3 = "";
-        int[] n1 = new int[70];
-        int[] n2 = new int[70];
-        int[] sum =new int[70];
-        int v1 = 0;
-        int v2 = 0;
-        char c1 = 0;
-        char c2 = 0;
 
-        //배열에 안넣고 String에 s3에 하나씩 넣는게 더 쉬울듯하다.
+        //길이가 다를 수 있으니 몇개를 덧붙일지 모르니까
+        String zeros = "", v = "";
+        for (int i = 0; i < Math.abs(s1.length()- s2.length()); i++){
+            zeros = zeros + "0";
+        }
+        if (s1.length() > s2.length()) s2 = zeros + s2;
+        else
+            s1 = zeros + s1;
+        int carry = 0;
 
-
-
-        //크기가 정확하게 안나옴 바이트 단위로 나오는 건가
-        //s1과 s2는 4자리 차이가 나지만 s1.length()-s2.length() = 1 이 나옴
-        //charAt으로 잘라서 배열에 넣는 것부터 먼저 해야함
-
-        //** s1 잘라서 n1배열에 넣기
-        for (int i = 0; i < s1.length(); i++) {
-            c1 = s1.charAt(s1.length() - i - 1);
-            v1 = c1 - '0';
-            n1[n1.length - 1 - i] = v1;
+        for (int i = s1.length()-1; i >= 0; i--){
+            int sum = carry + s1.charAt(i) - '0' + s2.charAt(i) - '0';
+            v = (sum%10) + v; //carry 따로 계산해야함
+            //캐리가 0보다 크면 v앞쪽에다 붙여줘야함
         }
 
-        //** s2 잘라서 n2배열에 넣기
-        for (int i = 0; i < s2.length(); i++) {
-            c2 = s2.charAt(s2.length() - i - 1);
-            v2 = c2 - '0';
-            n2[n2.length - 1 - i] = v2;
-        }
-        for (int i = 0; i < n1.length - 1; i++) {
 
 
-            if ((n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) >= 0) {
-                //배열에 안넣고 String에 s3에 하나씩 넣는게 더 쉬울듯하다.
-                //Test3파일 참조해서 해보자
+        //처음에는 올림수를 0으로 지정을 한다.
+        //배열 안써도 될 듯 하다.
+        //제일 마지막에 올림수가 있으면 하나더 올림수를 덧붙여주는 작업
+        //
+//        for (int i = 0; i < n1.length - 1; i++) {
+//            if ((n1[n1.length - 1 - i] + n2[n2.length - 1 - i])%10 > 0) {
+//                //배열에 안넣고 String에 s3에 하나씩 넣는게 더 쉬울듯하다.
+//                //Test3파일 참조해서 해보자
+//                s3 = s3 + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
+//                //sum[sum.length - 1 - i] = sum[sum.length - 1 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
+//                //sum[sum.length - 2 - i] = sum[sum.length - 2 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) / 10;
+//            }
+//            if ((n1[n1.length - 1 - i] + n2[n2.length - 1 - i])/10 > 0) {
+//                s3 = s3 + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
+//            }
+//
+//        }
+//        for (int i = 0; i < sum.length; i++) {
+//            s3 = "" + s3 + sum[i];
+//        }
+//        System.out.println(s3);
 
-                //sum[sum.length - 1 - i] = sum[sum.length - 1 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) % 10;
-                //sum[sum.length - 2 - i] = sum[sum.length - 2 - i] + (n1[n1.length - 1 - i] + n2[n2.length - 1 - i]) / 10;
-            }
-        }
-        for (int i = 0; i < sum.length; i++) {
-            s3 = "" + s3 + sum[i];
-        }
-        System.out.println(s3);
         //내코드
         // 999999999910888888888888888888888888888888888877666666666666666665
         //BigInteger
