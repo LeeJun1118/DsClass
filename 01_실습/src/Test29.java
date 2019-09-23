@@ -2,6 +2,7 @@
 public class Test29 {
     public static void main(String[] args) {
         //Test18번 참고하기
+        //k = k%n.length
 
         int n[] = {1,2,3,4,5,};
 
