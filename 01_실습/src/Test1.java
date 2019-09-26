@@ -7,5 +7,7 @@ public class Test1 {
         boolean supplementYN = false;
         char language = 'K';
         System.out.println(title + "," + publicationYear + "," + weight + "," + supplementYN + "," + language);
+
+
     }
 }

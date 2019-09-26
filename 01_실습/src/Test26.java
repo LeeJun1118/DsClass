@@ -19,7 +19,6 @@ public class Test26 {
                 System.out.println(n[i]);
         }
 
-
         // O(n)
         // 범위가 정해져 있으면 O(n)의 시간에 중복을 제거할 수 있다.(계수 정렬)
         // c라는 배열을 하나 만들어 범위는0~9까지
