@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Test15 {
@@ -19,9 +20,6 @@ public class Test15 {
             else
                 n[5]++;
         }
-        for (int i = 0; i < 6; i++) {
-            System.out.print(n[i] + " ");
-
-        }
+        System.out.println(Arrays.toString(n));
     }
 }

@@ -29,10 +29,22 @@ public class Test27 {
                 }
                 rank++;
             }
-
-
         }
 
+        System.out.println();
+        /*System.out.println("교수님");
+
+        int a[] = {1,1,2,2,2,2,3,3,4,4,5};
+        int d[] = new int[10];
+        for (int i = 0; i < a.length; i++){
+            d[a[i]]++;
+        }
+        System.out.println(Arrays.toString(d));
+        for (int i = 0; i < d.length; i++){
+            for (int j = 0; j < d[i]; j++){
+                System.out.print(i + " ");
+            }
+        }*/
 
     }
 }
