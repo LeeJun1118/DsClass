@@ -1,6 +1,6 @@
 package test2;
 
-public class Test2 {
+public class Test {
     public static void main(String[] args) {
         Node head = null;
         Node n1 = new Node(1);

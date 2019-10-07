@@ -13,8 +13,9 @@ public class SimpleList {
     @Override
     public String toString() {
         String v = "";
-        for (Node p = head; p != null; p = p.next){
+        for (Node p = head; p != null; p = p.next) {
             v = v + p.data + "=>";
+            //v += p.data + "=>";
         }
         return v;
     }
