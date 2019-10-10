@@ -9,27 +9,22 @@ public class Test5 {
 
     private static boolean checkParen(String s) {
         Stack<Character> stack = new Stack<>();
-        boolean tf = true;
         for (Character c : s.toCharArray()) {
             if (c == '(') {
-                System.out.println(stack.push(c));
+                stack.push(c);
             }
         }
-
-        while (!stack.isEmpty())
-        {
+        if (!stack.isEmpty()) {
             for (Character c : s.toCharArray()) {
-                if (c == ')')
-                {
-                    stack.pop();
+                if (c == ')') {
+                    stack.push(c);
+                    if (!stack.isEmpty()) stack.pop();
+                    else return false;
+                    if (!stack.isEmpty()) stack.pop();
+                    else return false;
                 }
             }
         }
-        if(!stack.isEmpty())
-            return false;
-
         return stack.isEmpty();
     }
-
-
 }
