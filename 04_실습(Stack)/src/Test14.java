@@ -19,13 +19,11 @@ public class Test14 {
         }
 
         public boolean isEmpty(){
-            if (top != -1) return false;
-            else return true;
+            return top == -1;
         }
 
         public boolean isFull(){
-            if (top == stack.length-1) return true;
-            else return false;
+            return top == stack.length-1;
         }
         public int peek(){ return stack[top];}
 
