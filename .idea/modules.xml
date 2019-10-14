@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/02_실습(배열)/02_실습(배열).iml" filepath="$PROJECT_DIR$/02_실습(배열)/02_실습(배열).iml" />
       <module fileurl="file://$PROJECT_DIR$/03_실습(연결리스트)/03_실습(연결리스트).iml" filepath="$PROJECT_DIR$/03_실습(연결리스트)/03_실습(연결리스트).iml" />
       <module fileurl="file://$PROJECT_DIR$/04_실습(Stack)/04_실습(Stack).iml" filepath="$PROJECT_DIR$/04_실습(Stack)/04_실습(Stack).iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_실습(큐)/05_실습(큐).iml" filepath="$PROJECT_DIR$/05_실습(큐)/05_실습(큐).iml" />
       <module fileurl="file://$PROJECT_DIR$/DsClass.iml" filepath="$PROJECT_DIR$/DsClass.iml" />
     </modules>
   </component>
