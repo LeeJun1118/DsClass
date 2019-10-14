@@ -9,7 +9,7 @@ public class Test10 {
     private static double postfixEval(String e) {
         Stack<Double> stack = new Stack<>();
         for (String token : e.split("\\s+")) {
-            stack.push(token);
+            //stack.push(token);
         }
         return stack.pop();
     }
