@@ -8,10 +8,6 @@ public class Test13 {
             char c = s.charAt(i);
             stack[++top] = c;
         }
-
-        for (int i = 0; i < s.length(); i++) {
-            System.out.print(stack[top--]);
-        }
-
+        while (top != 1) System.out.print(stack[top--]);
     }
 }
