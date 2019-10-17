@@ -15,13 +15,10 @@ public class SimpleList {
         return size;
     }
 
-    public String get(int i) {
-        String v = "";
+    public int get(int i) {
         Node p = head;
-        for (int j = 0; j < i; j++) {
-            p = p.next;
-        }
-        return v + p.data;
+        while (i-- > 0) p = p.next;
+        return p.data;
     }
 
 
