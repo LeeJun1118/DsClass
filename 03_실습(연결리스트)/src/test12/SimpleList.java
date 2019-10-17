@@ -16,6 +16,7 @@ public class SimpleList {
     }
 
     public int get(int i) {
+        if (i < 0 || i > size) throw new RuntimeException("오류");
         Node p = head;
         while (i-- > 0) p = p.next;
         return p.data;
