@@ -13,18 +13,16 @@ public class Test5 {
             if (c == '(') {
                 stack.push(c);
             }
-        }
-        if (!stack.isEmpty()) {
-            for (Character c : s.toCharArray()) {
-                if (c == ')') {
-                    stack.push(c);
-                    if (!stack.isEmpty()) stack.pop();
-                    else return false;
-                    if (!stack.isEmpty()) stack.pop();
+            else if(c == ')')
+            {
+                if (stack.isEmpty()) return false;
+                else {
+                    if (stack.peek() == '(') stack.pop();
                     else return false;
                 }
             }
         }
+
         return stack.isEmpty();
     }
 }
