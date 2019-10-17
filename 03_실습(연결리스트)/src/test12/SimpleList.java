@@ -2,18 +2,16 @@ package test12;
 
 public class SimpleList {
     Node head;
-
+    int size;
 
     public void addFirst(int data) {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
+        size++;
     }
 
     public int size() {
-        int size = 0;
-        for (Node p = head; p != null; p = p.next)
-            size++;
         return size;
     }
 
