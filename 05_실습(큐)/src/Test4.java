@@ -13,6 +13,7 @@ public class Test4 {
         for (int i = 0; i < k-1; i++) {
             front = queue.removeFirst();
             queue.add(front);
+            System.out.println(queue);
         }
     }
 }
