@@ -5,13 +5,11 @@ public class SimpleList {
     Node tail;
 
     public void addLast(int data) {
-        Node newNode = new Node(data);
-        tail = head;
-        if (head != null){
-            while (tail.next != null) tail = tail.next;
-            tail.next = newNode;
+        if (tail == null) head = tail = new Node(data);
+        else {
+            tail.next = new Node(data);
+            tail = tail.next;
         }
-        else head = newNode;
     }
 
     @Override
