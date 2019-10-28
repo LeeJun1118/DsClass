@@ -5,8 +5,17 @@ public class Test8 {
     }
 
     private static int max(int[] n, int i) {
-        if (i == 0) return n[i];
+        if (i == 0) return n[0];
         return n[i] > max(n,i-1) ? n[i] : max(n,i-1);
         //return Math.max(n[i], max(n, i - 1));
+
+
+        /*교수님 코드
+        if(n == 0) return n[0];
+
+        int max = max(n,i-1);
+        if(n[i] > max) return n[i];
+        else return max;*/
     }
 }
+
