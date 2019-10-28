@@ -6,7 +6,7 @@ public class Test12 {
             if (i != 0 && i != n.length) {
                 v = v + ",";
             }
-            v = v + n[i] + "";
+            v = v + n[i] ;
         }
         System.out.println("[" + v + "]");
 
