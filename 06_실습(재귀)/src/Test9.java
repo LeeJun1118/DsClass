@@ -5,9 +5,10 @@ public class Test9 {
     }
 
     private static long max(int[] n, int low, int high) {
-        long left = max(n,low,high/2 -1);
-        long right = max(n,high/2, high);
-        if (low == high)
-        return left >  right ? left : right;
+        //low와 high의 중간 지점 찾기
+        //v1, v2의 Math.max(v1,v2)
+        //low == high -> return n[low]
+        //(n,low,m)  (n,m+1,high)
+
     }
 }
