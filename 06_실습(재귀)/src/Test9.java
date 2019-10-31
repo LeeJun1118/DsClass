@@ -10,5 +10,10 @@ public class Test9 {
         //low == high -> return n[low]
         //(n,low,m)  (n,m+1,high)
 
+        int mid = (low + high)/2;
+        if (low == high) return n[low];
+        return Math.max(max(n, low, mid), max(n, mid + 1, high));
+
+
     }
 }
