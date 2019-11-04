@@ -4,12 +4,21 @@ public class Test18 {
     }
 
     private static long fibo(int n) {
-        long memo[] = new long[n+1];
+        /*long memo[] = new long[n+1];
         memo[1] = 1;
         for (int i = 2; i <= n; i++)
         {
             memo[i] = memo[i-1] + memo[i-2];
         }
-        return memo[n];
+        return memo[n];*/
+        if(n < 2) return n;
+        long n1 = 0, n2 = 1, n3 = 0;
+        for (int i = 2; i <= n; i++)
+        {
+            n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+        }
+        return n3;
     }
 }
