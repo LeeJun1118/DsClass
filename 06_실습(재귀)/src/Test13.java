@@ -7,6 +7,11 @@ public class Test13 {
         System.out.println(Arrays.toString(n));
     }
 
-    private static void reverse(int[] n, int i) {
+    private static int reverse(int[] n, int i) {
+        if (i == n.length/2) return n[i];
+        int temp = n[i];
+        n[i] = n[n.length-1-i];
+        n[n.length-1-i] = temp;
+        return reverse(n,i+1);
     }
 }
