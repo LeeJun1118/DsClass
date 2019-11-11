@@ -15,8 +15,10 @@ public class Test4 {
         while (i < n.length && j < m.length)
         {
             if (n[i] < m[j]) v[k++] = n[i++];
-            else
-                v[k++] = m[j++];
+            else v[k++] = m[j++];
+
+            //v[k++] = (n[i] < m[j])? n[i++] : m[j++]; 삼항 연산자로 간단하게 됨
+
         }
         while (i < n.length) v[k++] = n[i++];
         while (j < n.length) v[k++] = n[j++];
