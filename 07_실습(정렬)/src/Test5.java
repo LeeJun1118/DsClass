@@ -10,7 +10,7 @@ public class Test5 {
         int w[] = new int[right2 - left1 + 1];
         int i = left1, j = left2 ,k = 0;
 
-        while (i < right1 && j < right2) w[k++] = (v[i] < v[j])? v[i++] : v[j++];
+        while (i <= right1 && j <= right2) w[k++] = (v[i] < v[j])? v[i++] : v[j++];
         while (i <= right1) w[k++] = v[i++];
         while (j <= right2) w[k++] = v[j++];
         for (i = left1, k = 0; k < w.length;)v[i++] = w[k++];
