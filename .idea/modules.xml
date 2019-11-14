@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/05_실습(큐)/05_실습(큐).iml" filepath="$PROJECT_DIR$/05_실습(큐)/05_실습(큐).iml" />
       <module fileurl="file://$PROJECT_DIR$/06_실습(재귀)/06_실습(재귀).iml" filepath="$PROJECT_DIR$/06_실습(재귀)/06_실습(재귀).iml" />
       <module fileurl="file://$PROJECT_DIR$/07_실습(정렬)/07_실습(정렬).iml" filepath="$PROJECT_DIR$/07_실습(정렬)/07_실습(정렬).iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_실습(이진탐색)/08_실습(이진탐색).iml" filepath="$PROJECT_DIR$/08_실습(이진탐색)/08_실습(이진탐색).iml" />
       <module fileurl="file://$PROJECT_DIR$/DsClass.iml" filepath="$PROJECT_DIR$/DsClass.iml" />
     </modules>
   </component>
