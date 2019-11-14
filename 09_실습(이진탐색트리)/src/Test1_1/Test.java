@@ -2,7 +2,8 @@ package Test1_1;
 
 import java.util.LinkedList;
 
-public class Test {
+public class Test
+{
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
         int n[] = {50, 20, 70, 10, 30, 5, 15, 25, 60, 90, 62, 65, 64, 35};
