@@ -1,6 +1,8 @@
+package Test1_1;
+
 import java.util.LinkedList;
 
-public class Test1_1 {
+public class Test {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
         int n[] = {50, 20, 70, 10, 30, 5, 15, 25, 60, 90, 62, 65, 64, 35};
@@ -8,7 +10,7 @@ public class Test1_1 {
         System.out.println(tree.search(30));
         System.out.println(tree.search(33));
         System.out.println(tree);
-        //System.out.println(BinarySearchTree.inorder(tree.root));
+        //System.out.println(Test1_1.BinarySearchTree.inorder(tree.root));
 
     }
 }
