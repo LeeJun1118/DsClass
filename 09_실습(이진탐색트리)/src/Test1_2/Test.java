@@ -26,10 +26,18 @@ class BinarySearchTree {
         root=add(root, key);
     }
     private BinaryTree add(BinaryTree tree, int key) {
-        if(tree==null) return new BinaryTree(key);
+        /*if(tree==null) return new BinaryTree(key);
         if(tree.key<key) tree.right=add(tree.right, key);
         else if(tree.key>key) tree.left=add(tree.left, key);
         else ; // value 삽입 시 else tree.value=value;
+        return tree;*/
+        if (tree == null) return new BinaryTree(key);
+        while (tree != null)
+        {
+            if (tree.key < key)return tree = tree.right;
+            else if (tree.key > key) return tree.left = add(tree.left,key);
+            else;
+        }
         return tree;
     }
     public BinaryTree search(int key) {
