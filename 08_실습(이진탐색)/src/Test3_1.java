@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Test2_1 {
+public class Test3_1 {
     public static void main(String[] args) {
         int v[]= {1,1,1,1,2,2,2,3,4,5,8,9,9,9,9,9};
         Arrays.sort(v); // 배열 정렬
