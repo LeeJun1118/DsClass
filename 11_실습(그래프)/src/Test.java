@@ -11,7 +11,7 @@ public class Test {
             int v1 = Integer.parseInt(s[i]);
             int v2 = Integer.parseInt(s[i+1]);
             adjMat[v1][v2] = 1;
-            adjMat[v2][v1] = 1;
+            //adjMat[v2][v1] = 1; --무방향 그래프를 하려면 이걸 추가
 
 
         }
