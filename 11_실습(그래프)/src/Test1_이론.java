@@ -1,4 +1,4 @@
-public class Test {
+public class Test1_이론 {
     public static void main(String[] args) {
         int V = 8;
         String input = "0 1 0 3 1 2 3 2 3 4 2 5 4 5 6 7";
