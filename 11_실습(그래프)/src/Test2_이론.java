@@ -16,7 +16,7 @@ public class Test2_이론 {
             int v1 = Integer.parseInt(s[i]);
             int v2 = Integer.parseInt(s[i + 1]);
             adjList[v1].add(v2);
-            //adjList[v2].add(v1);
+            //adjList[v2].add(v1);  //무방향 그래프
         }
 
         for (int i = 0; i < adjList.length; i++) {
