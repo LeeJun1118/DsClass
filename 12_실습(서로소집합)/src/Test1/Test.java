@@ -1,6 +1,8 @@
+package Test1;
+
 import java.util.Arrays;
 
-public class Test1 {
+public class Test {
     public static void main(String[] args) {
         // union-find 연산을 이용한 <서로소집합>의 표현방법: {0,1}, {2,3,4}, {5,6,7,8}, {9}
         // 모든 단일원소집합들을 만든 후 union(합집합) 연산을 적용
