@@ -31,7 +31,7 @@ public class Test6_1 {
         int groups[] = new int[V];
         int id = 0;
         for (int i = 0; i < groups.length; i++) {
-            if (groups[i] == 0) {// <= 수정해야함
+            if (groups[i] == 0) {
                 dfs(adjList, V, groups, i, ++id);
                 System.out.println();
             }
