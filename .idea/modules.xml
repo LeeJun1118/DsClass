@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/10_실습(이진힙&amp;우선순위큐)/10_실습(이진힙&amp;우선순위큐).iml" filepath="$PROJECT_DIR$/10_실습(이진힙&amp;우선순위큐)/10_실습(이진힙&amp;우선순위큐).iml" />
       <module fileurl="file://$PROJECT_DIR$/11_실습(그래프)/11_실습(그래프).iml" filepath="$PROJECT_DIR$/11_실습(그래프)/11_실습(그래프).iml" />
       <module fileurl="file://$PROJECT_DIR$/12_실습(서로소집합)/12_실습(서로소집합).iml" filepath="$PROJECT_DIR$/12_실습(서로소집합)/12_실습(서로소집합).iml" />
+      <module fileurl="file://$PROJECT_DIR$/13_실습(해쉬)/13_실습(해쉬).iml" filepath="$PROJECT_DIR$/13_실습(해쉬)/13_실습(해쉬).iml" />
       <module fileurl="file://$PROJECT_DIR$/DsClass.iml" filepath="$PROJECT_DIR$/DsClass.iml" />
     </modules>
   </component>
