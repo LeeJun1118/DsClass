@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/12_실습(서로소집합)/12_실습(서로소집합).iml" filepath="$PROJECT_DIR$/12_실습(서로소집합)/12_실습(서로소집합).iml" />
       <module fileurl="file://$PROJECT_DIR$/13_실습(해쉬)/13_실습(해쉬).iml" filepath="$PROJECT_DIR$/13_실습(해쉬)/13_실습(해쉬).iml" />
       <module fileurl="file://$PROJECT_DIR$/DsClass.iml" filepath="$PROJECT_DIR$/DsClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/기말전문제풀이/기말전문제풀이.iml" filepath="$PROJECT_DIR$/기말전문제풀이/기말전문제풀이.iml" />
     </modules>
   </component>
 </project>
