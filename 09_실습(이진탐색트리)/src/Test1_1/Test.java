@@ -2,8 +2,7 @@ package Test1_1;
 
 import java.util.LinkedList;
 
-public class Test
-{
+public class Test {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
         int n[] = {50, 20, 70, 10, 30, 5, 15, 25, 60, 90, 62, 65, 64, 35};
@@ -46,23 +45,21 @@ class BinarySearchTree {
     }
 
     public BinaryTree search(int key) {
-/*
-        BinaryTree node = root;
-        while (node != null) {
-            if (node.key == key) return node;
-            if (node.key < key) node = node.right;
-            else node = node.left;
-            }
-            return node;
-*/
-            return searchRecur(root, key);
+        return searchRecur(root, key);
     }
+
     private BinaryTree searchRecur(BinaryTree node, int key) {
-        if(node == null) return node;
+        if (node == null) return null;
         if (node.key == key) return node;
         else
-        return (node.key < key) ? (searchRecur(node.right, key)) : (searchRecur(node.left, key));
+            return (node.key < key) ? (searchRecur(node.right, key)) : (searchRecur(node.left, key));
+
+        /*if (node == null) return null;
+        if(node.key == key) return node;
+        if (node.key < key) return searchRecur(node.right,key);
+        else return searchRecur(node.left,key);*/
     }
+
     @Override
     public String toString() {
         return levelOrder().toString();

@@ -15,23 +15,13 @@ public class Test5_2 {
 
     }
 
-    private static int remove(int[] heap, int i) {
+    private static int remove(int[] heap, int last) {
         //앞 쪽에 simpleHeap에 구현해 놓은 거랑 거의 비슷하게 구현하면된다.
-        if(i<0) throw new RuntimeException("heap empty");
+        if(last<0) throw new RuntimeException("heap empty");
         int data=heap[0]; // root 노드 자료 추출
-        heap[0]=heap[i--]; // 마지막 노드 root로 이동 & 크기 1 감소
-        for (int parent=0, child=2*parent+1; child<=i; parent=child, child=2*parent+1) { // root를 heapify-down
-            if(child<i && heap[child]<heap[child+1]) child++;
-            if(heap[child]<=heap[parent]) break;
-            swap(heap,child,parent);
-        }
+        heap[0]=heap[last--]; // 마지막 노드 root로 이동 & 크기 1 감소
+        heapifyDown(heap,last,0);
         return data;
-    }
-
-    private static void swap(int[] heap, int m, int n) {
-        int temp=heap[m];
-        heap[m]=heap[n];
-        heap[n]=temp;
     }
 
     private static int peek(int[] heap) {
